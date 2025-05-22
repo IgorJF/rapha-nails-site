@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphaela Gardioli | Nails Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="logo-container mr-2">
+                        <!-- SUBSTITUA ESTE CAMINHO PELA SUA LOGO -->
+                        <img src="assets/img/logo.png" alt="Raphaela Gardioli Nails Designer" class="logo-img">
+                    </div>
+                    <h1 class="title-font text-lg sm:text-xl font-semibold">Raphaela Gardioli</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#home" class="hover-gold font-medium text-sm lg:text-base">Início</a>
+                    <a href="#about" class="hover-gold font-medium text-sm lg:text-base">Sobre</a>
+                    <a href="#benefits" class="hover-gold font-medium text-sm lg:text-base">Benefícios</a>
+                    <a href="#gallery" class="hover-gold font-medium text-sm lg:text-base">Portfólio</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="hover-gold font-medium text-base">Início</a>
+                <a href="#about" class="hover-gold font-medium text-base">Sobre</a>
+                <a href="#benefits" class="hover-gold font-medium text-base">Benefícios</a>
+                <a href="#gallery" class="hover-gold font-medium text-base">Portfólio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 sm:mb-12 md:mb-0">
+                <h2 class="title-font text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight">Unhas
+                    impecáveis em <br><span class="gold-text">apenas 1 hora</span></h2>
+                <p class="text-base sm:text-lg mb-6 sm:mb-8 text-gray-600">Designer de unhas especializada em
+                    alongamento em gel e fibra de vidro. Transformo suas mãos com elegância e durabilidade.</p>
+                <a href="https://wa.me/SEUNUMERO"
+                    class="whatsapp-button inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-medium sm:font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-full transition duration-300 text-sm sm:text-base">
+                    <i class="fab fa-whatsapp text-lg sm:text-xl mr-2"></i> Agende pelo WhatsApp
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+                <!-- SUBSTITUA ESTE CAMINHO PELA IMAGEM PRINCIPAL -->
+                <div class="hero-image relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl" style="background-image: url('assets/img/hero-image.jpg');">
+                    <!-- Fallback se a imagem não carregar -->
+                    <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                        <i class="fas fa-spa text-4xl sm:text-5xl gold-text"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20 px-4 sm:px-6 bg-white section-padding">
+        <div class="container mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="title-font text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Sobre o meu trabalho</h2>
+                <div class="w-16 sm:w-20 h-1 gold-bg mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 sm:mb-10 md:mb-0 md:pr-6 lg:pr-10">
+                    <div class="rounded-lg overflow-hidden shadow-xl">
+                        <!-- SUBSTITUA ESTE CAMINHO PELA IMAGEM SOBRE -->
+                        <div class="w-full h-48 sm:h-64 bg-cover bg-center" style="background-image: url('assets/img/img1.jpg');">
+                            <!-- Fallback se a imagem não carregar -->
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                                <i class="fas fa-hand-holding-heart text-4xl sm:text-5xl gold-text"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="title-font text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Raphaela Gardioli</h3>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Especialista em alongamento de unhas com
+                        gel e fibra de vidro, meu objetivo é proporcionar um serviço rápido e de alta qualidade para
+                        mulheres que valorizam sua autoestima mas têm pouco tempo.</p>
+                    <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">Com técnica apurada e atenção aos
+                        detalhes, garanto unhas naturais, duráveis e com acabamento perfeito em apenas 1 hora de
+                        procedimento.</p>
+                    <div class="flex flex-wrap">
+                        <div class="w-full sm:w-1/2 mb-3 sm:mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle gold-text mt-0.5 sm:mt-1 mr-2 text-sm sm:text-base"></i>
+                                <span class="text-gray-700 text-sm sm:text-base">Alongamento em gel</span>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 mb-3 sm:mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle gold-text mt-0.5 sm:mt-1 mr-2 text-sm sm:text-base"></i>
+                                <span class="text-gray-700 text-sm sm:text-base">Fibra de vidro</span>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 mb-3 sm:mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle gold-text mt-0.5 sm:mt-1 mr-2 text-sm sm:text-base"></i>
+                                <span class="text-gray-700 text-sm sm:text-base">Manutenção rápida</span>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 mb-3 sm:mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle gold-text mt-0.5 sm:mt-1 mr-2 text-sm sm:text-base"></i>
+                                <span class="text-gray-700 text-sm sm:text-base">Design personalizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 sm:py-20 px-4 sm:px-6 bg-gray-50 section-padding">
+        <div class="container mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="title-font text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Por que minhas clientes
+                    me escolhem?</h2>
+                <div class="w-16 sm:w-20 h-1 gold-bg mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Benefit 1 -->
+                <div
+                    class="benefit-card bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="gold-text text-3xl sm:text-4xl mb-3 sm:mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="title-font text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Rapidez</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Procedimento completo em apenas 1 hora, perfeito para
+                        quem tem uma agenda cheia mas não abre mão da beleza.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div
+                    class="benefit-card bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="gold-text text-3xl sm:text-4xl mb-3 sm:mb-4">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="title-font text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Durabilidade</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Unhas que permanecem perfeitas por semanas, graças a
+                        técnicas profissionais e materiais de alta qualidade.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div
+                    class="benefit-card bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="gold-text text-3xl sm:text-4xl mb-3 sm:mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="title-font text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Autoestima</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Mãos bem cuidadas elevam a confiança e o bem-estar,
+                        ajudando você a se sentir poderosa no dia a dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 sm:py-20 px-4 sm:px-6 bg-white section-padding">
+        <div class="container mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="title-font text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Meu Portfólio</h2>
+                <div class="w-16 sm:w-20 h-1 gold-bg mx-auto"></div>
+                <p class="text-gray-600 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">Confira alguns dos meus
+                    trabalhos recentes. Cada conjunto de unhas é único, feito sob medida para o estilo e personalidade
+                    de cada cliente.</p>
+            </div>
+            <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                <!-- Item 1 - SUBSTITUA O CAMINHO -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
+                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
+                        style="background-image: url('assets/img/img1.jpg');">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-medium">Título da foto</h3>
+                        <p class="text-sm">Descrição breve</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 - SUBSTITUA O CAMINHO -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
+                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
+                        style="background-image: url('assets/img/img2.jpg');">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-medium">Título da foto</h3>
+                        <p class="text-sm">Descrição breve</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 - SUBSTITUA O CAMINHO -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
+                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
+                        style="background-image: url('assets/img/img3.jpg');">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-medium">Título da foto</h3>
+                        <p class="text-sm">Descrição breve</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 - SUBSTITUA O CAMINHO -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
+                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
+                        style="background-image: url('assets/img/img4.jpg');">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-medium">Título da foto</h3>
+                        <p class="text-sm">Descrição breve</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 - SUBSTITUA O CAMINHO -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
+                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
+                        style="background-image: url('assets/img/gallery-5.jpg');">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-medium">Título da foto</h3>
+                        <p class="text-sm">Descrição breve</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 - SUBSTITUA O CAMINHO -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
+                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
+                        style="background-image: url('assets/img/gallery-6.jpg');">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
+                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-medium">Título da foto</h3>
+                        <p class="text-sm">Descrição breve</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 sm:py-16 px-4 sm:px-6 gold-bg text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="title-font text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Pronta para renovar suas
+                unhas?</h2>
+            <p class="text-lg sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto">Agende agora mesmo seu horário e transforme
+                suas mãos em apenas 1 hora.</p>
+            <a href="https://wa.me/SEUNUMERO"
+                class="whatsapp-button inline-flex items-center bg-white hover:bg-gray-100 gold-text font-medium sm:font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-full transition duration-300 text-sm sm:text-base">
+                <i class="fab fa-whatsapp text-lg sm:text-xl mr-2 text-green-500"></i> Agende pelo WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 sm:py-12 px-4 sm:px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-3 sm:mb-4">
+                        <div class="logo-container mr-2">
+                            <!-- Logo também no footer -->
+                            <img src="assets/img/logo.png" alt="Raphaela Gardioli Nails Designer" class="logo-img">
+                        </div>
+                        <h3 class="title-font text-lg sm:text-xl font-semibold">Raphaela Gardioli</h3>
+                    </div>
+                    <p class="text-gray-400 max-w-xs text-sm sm:text-base">Designer de unhas especializada em
+                        alongamento em gel e fibra de vidro. Beleza que eleva sua autoestima.</p>
+                </div>
+
+                <div class="mb-8 md:mb-0">
+                    <h4 class="title-font text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contato</h4>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-phone-alt gold-text mr-2 text-sm sm:text-base"></i>
+                        <span class="text-gray-400 text-sm sm:text-base">(XX) XXXX-XXXX</span>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-envelope gold-text mr-2 text-sm sm:text-base"></i>
+                        <span class="text-gray-400 text-sm sm:text-base">email@exemplo.com</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt gold-text mr-2 text-sm sm:text-base"></i>
+                        <span class="text-gray-400 text-sm sm:text-base">Endereço do studio</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="title-font text-base sm:text-lg font-semibold mb-3 sm:mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-lg sm:text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-lg sm:text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-lg sm:text-xl">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 mt-10 sm:mt-12 pt-6 sm:pt-8 text-center text-gray-500 text-sm sm:text-base">
+                <p>&copy; 2023 Raphaela Gardioli Nails Designer. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50">
+        <a href="https://wa.me/SEUNUMERO"
+            class="whatsapp-button flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg">
+            <i class="fab fa-whatsapp text-xl sm:text-2xl"></i>
+        </a>
+    </div>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
