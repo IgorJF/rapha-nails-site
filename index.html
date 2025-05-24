@@ -17,7 +17,6 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <div class="logo-container mr-2">
-                        <!-- SUBSTITUA ESTE CAMINHO PELA SUA LOGO -->
                         <img src="assets/img/logo.png" alt="Raphaela Gardioli Nails Designer" class="logo-img">
                     </div>
                     <h1 class="title-font text-lg sm:text-xl font-semibold">Raphaela Gardioli</h1>
@@ -47,7 +46,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home"
         class="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 bg-gradient-to-b from-white to-gray-50">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
@@ -62,18 +60,15 @@
                 </a>
             </div>
             <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
-                <!-- SUBSTITUA ESTE CAMINHO PELA IMAGEM PRINCIPAL -->
-                <div class="hero-image relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl" style="background-image: url('assets/img/hero-image.jpg');">
-                    <!-- Fallback se a imagem não carregar -->
-                    <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                        <i class="fas fa-spa text-4xl sm:text-5xl gold-text"></i>
-                    </div>
+                <div
+                    class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="assets/img/img4.jpg" alt="Unhas feitas por Raphaela Gardioli"
+                        class="w-full h-full object-cover object-center-top">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-16 sm:py-20 px-4 sm:px-6 bg-white section-padding">
         <div class="container mx-auto">
             <div class="text-center mb-12 sm:mb-16">
@@ -83,14 +78,9 @@
 
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 sm:mb-10 md:mb-0 md:pr-6 lg:pr-10">
-                    <div class="rounded-lg overflow-hidden shadow-xl">
-                        <!-- SUBSTITUA ESTE CAMINHO PELA IMAGEM SOBRE -->
-                        <div class="w-full h-48 sm:h-64 bg-cover bg-center" style="background-image: url('assets/img/img1.jpg');">
-                            <!-- Fallback se a imagem não carregar -->
-                            <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                                <i class="fas fa-hand-holding-heart text-4xl sm:text-5xl gold-text"></i>
-                            </div>
-                        </div>
+                    <div class="rounded-lg overflow-hidden shadow-xl h-62 sm:h-80 md:h-96">
+                        <img src="assets/img/img1.jpg" alt="Trabalho de unhas" class="w-full h-full object-cover"
+                            style="object-position: center 80%;"> 
                     </div>
                 </div>
                 <div class="md:w-1/2">
@@ -132,7 +122,6 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
     <section id="benefits" class="py-16 sm:py-20 px-4 sm:px-6 bg-gray-50 section-padding">
         <div class="container mx-auto">
             <div class="text-center mb-12 sm:mb-16">
@@ -142,7 +131,6 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                <!-- Benefit 1 -->
                 <div
                     class="benefit-card bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
                     <div class="gold-text text-3xl sm:text-4xl mb-3 sm:mb-4">
@@ -153,7 +141,6 @@
                         quem tem uma agenda cheia mas não abre mão da beleza.</p>
                 </div>
 
-                <!-- Benefit 2 -->
                 <div
                     class="benefit-card bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
                     <div class="gold-text text-3xl sm:text-4xl mb-3 sm:mb-4">
@@ -164,7 +151,6 @@
                         técnicas profissionais e materiais de alta qualidade.</p>
                 </div>
 
-                <!-- Benefit 3 -->
                 <div
                     class="benefit-card bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
                     <div class="gold-text text-3xl sm:text-4xl mb-3 sm:mb-4">
@@ -187,93 +173,21 @@
                     trabalhos recentes. Cada conjunto de unhas é único, feito sob medida para o estilo e personalidade
                     de cada cliente.</p>
             </div>
-            <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-                <!-- Item 1 - SUBSTITUA O CAMINHO -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
-                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
-                        style="background-image: url('assets/img/img1.jpg');">
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <h3 class="font-medium">Título da foto</h3>
-                        <p class="text-sm">Descrição breve</p>
-                    </div>
+            <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative h-64 sm:h-80">
+                    <img src="assets/img/img1.jpg" alt="Trabalho de unhas 1" class="w-full h-full object-cover">
                 </div>
 
-                <!-- Item 2 - SUBSTITUA O CAMINHO -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
-                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
-                        style="background-image: url('assets/img/img2.jpg');">
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <h3 class="font-medium">Título da foto</h3>
-                        <p class="text-sm">Descrição breve</p>
-                    </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative h-64 sm:h-80">
+                    <img src="assets/img/img2.jpg" alt="Trabalho de unhas 2" class="w-full h-full object-cover">
                 </div>
 
-                <!-- Item 3 - SUBSTITUA O CAMINHO -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
-                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
-                        style="background-image: url('assets/img/img3.jpg');">
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <h3 class="font-medium">Título da foto</h3>
-                        <p class="text-sm">Descrição breve</p>
-                    </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative h-64 sm:h-80">
+                    <img src="assets/img/img3.jpg" alt="Trabalho de unhas 3" class="w-full h-full object-cover">
                 </div>
 
-                <!-- Item 4 - SUBSTITUA O CAMINHO -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
-                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
-                        style="background-image: url('assets/img/img4.jpg');">
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <h3 class="font-medium">Título da foto</h3>
-                        <p class="text-sm">Descrição breve</p>
-                    </div>
-                </div>
-
-                <!-- Item 5 - SUBSTITUA O CAMINHO -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
-                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
-                        style="background-image: url('assets/img/gallery-5.jpg');">
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <h3 class="font-medium">Título da foto</h3>
-                        <p class="text-sm">Descrição breve</p>
-                    </div>
-                </div>
-
-                <!-- Item 6 - SUBSTITUA O CAMINHO -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative">
-                    <div class="w-full h-48 sm:h-64 bg-cover bg-center"
-                        style="background-image: url('assets/img/gallery-6.jpg');">
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center md:hidden">
-                            <i class="fas fa-image text-3xl sm:text-4xl gold-text"></i>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <h3 class="font-medium">Título da foto</h3>
-                        <p class="text-sm">Descrição breve</p>
-                    </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md relative h-64 sm:h-80">
+                    <img src="assets/img/img4.jpg" alt="Trabalho de unhas 4" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
@@ -300,7 +214,6 @@
                 <div class="mb-8 md:mb-0">
                     <div class="flex items-center mb-3 sm:mb-4">
                         <div class="logo-container mr-2">
-                            <!-- Logo também no footer -->
                             <img src="assets/img/logo.png" alt="Raphaela Gardioli Nails Designer" class="logo-img">
                         </div>
                         <h3 class="title-font text-lg sm:text-xl font-semibold">Raphaela Gardioli</h3>
@@ -343,7 +256,8 @@
 
             <div
                 class="border-t border-gray-800 mt-10 sm:mt-12 pt-6 sm:pt-8 text-center text-gray-500 text-sm sm:text-base">
-                <p>&copy; 2023 Raphaela Gardioli Nails Designer. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Raphaela Gardioli Nails Designer. Todos os direitos reservados. &#x2764; <a
+                        href="">Cinética Jr. </a></p>
             </div>
         </div>
     </footer>

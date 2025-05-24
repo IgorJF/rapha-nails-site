@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -36,6 +40,27 @@ body {
 .whatsapp-button {
     animation: pulse 2s infinite;
 }
+
+.object-center-top {
+    object-position: center top;
+}
+
+
+.about-image-container {
+    transition: transform 0.3s ease;
+}
+
+.about-image-container:hover {
+    transform: scale(2);
+}
+
+@media (max-width: 640px) {
+    .hero-image-container {
+        width: 240px;
+        height: 240px;
+    }
+}
+
 
 @keyframes pulse {
     0% {
