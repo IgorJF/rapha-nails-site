@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     
@@ -8,9 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            if (this.getAttribute('href').includes('wa.me')) {
+            // Skip if it's a WhatsApp link or external link
+            if (this.getAttribute('href').includes('wa.me') || 
+                this.getAttribute('href').includes('://') ||
+                this.getAttribute('target') === '_blank') {
                 return;
             }
             
@@ -22,27 +27,46 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                if (mobileMenu) {
+                // Close mobile menu if open
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
                 }
                 
+                // Calculate scroll position considering fixed header
                 const headerHeight = document.querySelector('header').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
                 
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+                // Smooth scroll with more control
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition - startPosition;
+                const duration = 800; // milliseconds
+                let startTime = null;
                 
-                if (history.pushState) {
-                    history.pushState(null, null, targetId);
-                } else {
-                    location.hash = targetId;
+                function animation(currentTime) {
+                    if (startTime === null) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const run = ease(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, run);
+                    if (timeElapsed < duration) requestAnimationFrame(animation);
                 }
+                
+                // Easing function for smooth animation
+                function ease(t, b, c, d) {
+                    t /= d/2;
+                    if (t < 1) return c/2*t*t*t + b;
+                    t -= 2;
+                    return c/2*(t*t*t + 2) + b;
+                }
+                
+                requestAnimationFrame(animation);
+                
+                // Update URL
+                history.pushState(null, null, targetId);
             }
         });
     });
 
+    // Add shadow to header on scroll
     const header = document.querySelector('header');
     if (header) {
         window.addEventListener('scroll', function() {
@@ -55,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
+        // Initialize header shadow state
         header.classList.toggle('shadow-md', window.scrollY > 10);
         header.classList.toggle('shadow-sm', window.scrollY <= 10);
     }
